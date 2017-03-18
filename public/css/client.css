@@ -1,0 +1,282 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.uucltd{
+    margin-top:20px;
+}
+.uucltd  #logo{
+    display: inline-block;
+    margin:0px auto;
+}
+.uucltd .full_nav{
+    padding-top: 28px;
+}
+.uucltd .main_nav{
+    box-shadow: 0 0 15px #e7e7e7;
+}
+.uucltd li.in_active a{
+    color: #9db668;
+}
+.uucltd .under_nav{
+    height: 4px;
+    background-color: #e7e7e7;
+}
+.uucltd .carousel-control {
+
+    opacity: .1;
+}
+.uucltd .carousel-inner>.item>img, .img-responsive,.uucltd .thumbnail a>img,.uucltd .thumbnail>img {
+
+    width: 100%;
+
+    max-height: 450px;
+}
+.uucltd .paddingat{
+    margin-top: 20px;
+}
+.uucltd .home_text{
+    line-height: 200%;
+}
+
+/*Rating*/
+.rat{
+    width: 38px;
+    height: 48px;
+    float:left;
+    cursor: pointer;
+    font-size: 40px;
+}
+.coment_button{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.txt-area{
+    resize: none;
+}
+.total_rating .progresbar_width{
+    width:150px;
+    height:4px;
+}
+
+.total_rating .progresbar_width .progress {
+    height: 4px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 8px;
+}
+.total_rating tr {
+    align-content: center;
+}
+.stars{
+    color: rgb(92, 184, 92);
+    font-size: 17px;
+}
+.profile-pic{
+    padding: 0px;
+    border:1px solid #a7a7a7;
+    border-radius: 3px;
+    box-shadow:0 0 2px  #e7e7e7;
+    float:left;
+    margin:10px;
+    width: 80px;
+}
+.profile-pic img{
+    width: 78px;
+    border-radius: 3px 3px 0 0 ;
+}
+.profile-pic .stars{
+    text-align: center;
+}
+p.comment_text {
+    color: #686868;
+    line-height: 19px;
+}
+.data-time{
+    float: right;
+}
+.singel-comment{
+
+    margin-bottom: 8px;
+    padding-bottom: 5px;
+}
+.singel-comment data{
+    border-bottom: 1px solid #e7e7e7;
+    margin-bottom: 10px;
+}
+
+* {
+    box-sizing:border-box;
+}
+
+
+
+
+
+
+
+/* For lower than 700px resolutions */
+@media (max-width: 700px) {  }
+/* Same as last but with the device orientation on land scape */
+@media (max-width: 700px) and (orientation: landscape) {  }
+/* Including width and orientation you can add a media type clause,
+   in this case 'tv' */
+@media tv and (min-width: 700px) and (orientation: landscape) {  }
+/* for low resolution display with background-image */
+.image {
+    /*background-image: url(/path/to/my/image.png);*/
+    background-size: 200px 300px;
+    height: 300px;
+    width: 200px;
+}
+/* for high resolution (Retina) display with background-image */
+@media only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2) {
+
+}
+.full {
+    width: 100%;
+}
+.gap {
+    height: 30px;
+    width: 100%;
+    clear: both;
+    display: block;
+}
+.footer {
+    background: #EDEFF1;
+    height: auto;
+    padding-bottom: 30px;
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid #CCCCCC;
+    border-top: 1px solid #DDDDDD;
+}
+.footer p {
+    margin: 0;
+}
+.footer img {
+    max-width: 100%;
+}
+.footer h3 {
+    border-bottom: 1px solid #BAC1C8;
+    color: #54697E;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    padding: 40px 0 10px;
+    text-transform: uppercase;
+}
+.footer ul {
+    font-size: 13px;
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+    margin-top: 15px;
+    color: #7F8C8D;
+}
+.footer ul li a {
+    padding: 0 0 5px 0;
+    display: block;
+}
+.footer a {
+    color: #78828D
+}
+.supportLi h4 {
+    font-size: 20px;
+    font-weight: lighter;
+    line-height: normal;
+    margin-bottom: 0 !important;
+    padding-bottom: 0;
+}
+.newsletter-box input#appendedInputButton {
+    background: #FFFFFF;
+    display: inline-block;
+    float: left;
+    height: 30px;
+    clear: both;
+    width: 100%;
+}
+.newsletter-box .btn {
+    border: medium none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    display: inline-block;
+    height: 40px;
+    padding: 0;
+    width: 100%;
+    color: #fff;
+}
+.newsletter-box {
+    overflow: hidden;
+}
+.bg-gray {
+    background-image: -moz-linear-gradient(center bottom, #BBBBBB 0%, #F0F0F0 100%);
+    box-shadow: 0 1px 0 #B4B3B3;
+}
+.social li {
+    background: none repeat scroll 0 0 #B5B5B5;
+    border: 2px solid #B5B5B5;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    float: left;
+    height: 36px;
+    line-height: 36px;
+    margin: 0 8px 0 0;
+    padding: 0;
+    text-align: center;
+    width: 36px;
+    transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+    -ms-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+}
+.social li:hover {
+    transform: scale(1.15) rotate(360deg);
+    -webkit-transform: scale(1.1) rotate(360deg);
+    -moz-transform: scale(1.1) rotate(360deg);
+    -ms-transform: scale(1.1) rotate(360deg);
+    -o-transform: scale(1.1) rotate(360deg);
+}
+.social li a {
+    color: #EDEFF1;
+}
+.social li:hover {
+    border: 2px solid #2c3e50;
+    background: #2c3e50;
+}
+.social li a i {
+    font-size: 16px;
+    margin: 0 0 0 5px;
+    color: #EDEFF1 !important;
+}
+.footer-bottom {
+    background: #E3E3E3;
+    border-top: 1px solid #DDDDDD;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.footer-bottom p.pull-left {
+    padding-top: 6px;
+}
+.payments {
+    font-size: 1.5em;
+}
+a.lineCenter {
+    line-height: 5;
+}
