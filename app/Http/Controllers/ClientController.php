@@ -7,14 +7,15 @@ use  App\Gallery;
 //use Illuminate\Support\Facades\DB;
 use Flashy;
 use DB;
-
+use App\Slide;
 class ClientController extends Controller
 {
 
     public function index()
     {
+        $slide = Slide::all();
 
-        return view('client.index');
+        return view('client.index', compact('slide', $slide));
     }
     public function gallery(){
 //        $gallery = Gallery::all();

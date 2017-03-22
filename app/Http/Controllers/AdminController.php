@@ -6,6 +6,7 @@ use App\Gallery;
 use Illuminate\Http\Request;
 use DB;
 use Flashy;
+use App\Slide;
 class AdminController extends Controller
 {
     /**
@@ -33,7 +34,8 @@ class AdminController extends Controller
         return view('admin.gallery', compact('gallery', $gallery));
     }
     public function home(){
-        return view('admin.home');
+        $slide = Slide::all();
+        return view('admin.home', compact('slide', $slide));
     }
     public function contact(){
         return view('admin.contact');

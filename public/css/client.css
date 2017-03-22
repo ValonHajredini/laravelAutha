@@ -30,7 +30,7 @@ body{
 
     width: 100%;
 
-    max-height: 450px;
+    /*max-height: 450px;*/
 }
 .uucltd .paddingat{
     margin-top: 20px;
@@ -221,10 +221,10 @@ only screen and (min-device-pixel-ratio: 2) {
 .newsletter-box {
     overflow: hidden;
 }
-.bg-gray {
-    background-image: -moz-linear-gradient(center bottom, #BBBBBB 0%, #F0F0F0 100%);
-    box-shadow: 0 1px 0 #B4B3B3;
-}
+/*.bg-gray {*/
+    /*background-image: -moz-linear-gradient(center bottom, #BBBBBB 0%, #F0F0F0 100%);*/
+    /*box-shadow: 0 1px 0 #B4B3B3;*/
+/*}*/
 .social li {
     background: none repeat scroll 0 0 #B5B5B5;
     border: 2px solid #B5B5B5;
@@ -279,4 +279,7 @@ only screen and (min-device-pixel-ratio: 2) {
 }
 a.lineCenter {
     line-height: 5;
+}
+.imgeForSlide {
+    margin-bottom: 15px;
 }

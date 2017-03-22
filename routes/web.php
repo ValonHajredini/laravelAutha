@@ -50,7 +50,11 @@ Route::prefix('admin')->group(function (){
 //    Edit pages
     Route::get('/dashboard/Gallery', 'AdminController@gallery')->name('admin.gallery');
     Route::post('/dashboard/createGallery', 'GalleryController@createGallery')->name('admin.createGallery');
+
+    Route::post('/dashboard/createSlider', 'SlideController@createSlide')->name('admin.createSlide');
+
     Route::get('/dashboard/Gallery/{id}','GalleryController@delete');
+    Route::get('/dashboard/Slide/{id}','SlideController@delete')->name('deleteSlide.Image');
 
 
 
