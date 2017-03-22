@@ -12,6 +12,7 @@
     <link href="{{ asset('admin/css/font-awesome.min.css') }}" rel="stylesheet">
     {{--<link rel="stylesheet" type="text/css" href="css/local.css" />--}}
     <link href="{{ asset('admin/css/local.css') }}" rel="stylesheet">
+    <link href="{{ asset('admin/css/People.css') }}" rel="stylesheet">
 
     {{--<script src="{{ asset('js/app.js') }}"></script>--}}
     <script src="{{ asset('admin/js/jquery-1.10.2.min.js') }}"></script>
@@ -76,7 +77,7 @@
                     </ul>
                 </li>
                 <li class="dropdown user-dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Steve Miller<b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> {{Auth::user()->name}}<b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
                         <li><a href="#"><i class="fa fa-gear"></i> Settings</a></li>

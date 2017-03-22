@@ -4,13 +4,20 @@ namespace App\Http\Controllers\People;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 use App\Models\People;
 use DB;
 class PeopleController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth:admin');
+    }
     public function Dashboard(){
-        $peoples = DB::table('peoples')->orderBy('Mbiemri')->paginate(50);
-        return view('People.index', compact('peoples', $peoples));
+        $user = Auth::user();
+        $peoples = DB::table('peoples')->orderBy('Mbiemri')->paginate(52);
+//        return view::make('People.index', compact('peoples', $peoples));
+        return view('People.index',['peoples' => $peoples, 'user' => $user]);
 
     }
     public function showPErson(Request $request){
