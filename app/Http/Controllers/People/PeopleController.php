@@ -21,9 +21,7 @@ class PeopleController extends Controller
 
     }
     public function showPErson(Request $request){
-//        $person = People::find($request['id']);
-        $person = DB::table('peoples')->find($request->id);
+        $person = People::find($request->id);
         return view('People.showPerson', compact('person', $person));
-//            return ;
     }
 }

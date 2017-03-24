@@ -15,6 +15,11 @@ class AddContactInformationToPeople extends Migration
     {
         Schema::create('contactInformationes', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('people_id');
+            $table->string('contactType');
+            $table->string('contactContent');
+            $table->string('contactProperty');
+            $table->string('contactPriority');
             $table->timestamps();
         });
     }

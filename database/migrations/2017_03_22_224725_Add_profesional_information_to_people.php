@@ -13,8 +13,13 @@ class AddProfesionalInformationToPeople extends Migration
      */
     public function up()
     {
-        Schema::create('profesionalInformation', function (Blueprint $table) {
+        Schema::create('profesionalInformationes', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('people_id');
+            $table->string('profesionalType');
+            $table->string('profesionalContent');
+            $table->string('profesionalProperty');
+            $table->string('profesionalPriority');
             $table->timestamps();
         });
     }

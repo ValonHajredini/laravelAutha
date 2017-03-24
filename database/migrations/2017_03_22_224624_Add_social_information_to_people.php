@@ -13,8 +13,13 @@ class AddSocialInformationToPeople extends Migration
      */
     public function up()
     {
-        Schema::create('socialInformationeses', function (Blueprint $table) {
+        Schema::create('socialInformationes', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('people_id');
+            $table->string('socialType');
+            $table->string('socialContent');
+            $table->string('socialProperty');
+            $table->string('socialPriority');
             $table->timestamps();
         });
     }
